@@ -1,0 +1,17 @@
+{
+    "search.exclude": {
+        "**/node_modules": false
+    },
+    "search.useGlobalIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true,
+    "files.associations": {
+    "*.css": "tailwindcss"
+    },
+    "editor.formatOnSave": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "[php]": {
+  //   "editor.formatOnSave": false
+  // }
+}
+
+    
