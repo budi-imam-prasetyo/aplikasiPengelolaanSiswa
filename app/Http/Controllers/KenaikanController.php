@@ -52,6 +52,7 @@ class KenaikanController extends Controller
             'tahun_ajaran' => 'required|string|max:20',
             'kelas_asal' => 'required|exists:kelas,id',
             'kelas_tujuan' => 'required|exists:kelas,id',
+            'status' => 'required|in:naik,tidak_naik',
         ]);
 
         Kenaikan::create($request->all());
@@ -70,6 +71,7 @@ class KenaikanController extends Controller
             'tahun_ajaran' => 'required|string|max:20',
             'kelas_asal' => 'required|exists:kelas,id',
             'kelas_tujuan' => 'required|exists:kelas,id',
+            'status' => 'required|in:naik,tidak_naik',
         ]);
 
         $kenaikan->update($request->all());

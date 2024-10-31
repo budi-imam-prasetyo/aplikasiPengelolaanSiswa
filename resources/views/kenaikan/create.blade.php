@@ -44,6 +44,14 @@
                     @endforeach
                 </select>
             </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select name="status" id="status" class="form-control" required>
+                    <option value="">Pilih Status</option>
+                    <option value="naik">Naik Kelas</option>
+                    <option value="tidak_naik">Tidak Naik Kelas</option>
+                </select>
+            </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
             <a href="{{ route('kenaikan.index') }}" class="btn btn-secondary">Kembali</a>
         </form>
